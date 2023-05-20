@@ -16,3 +16,14 @@ let contactList = [
 ];
 
 console.log(contactList);
+
+// Crea una función para añadir un nuevo contacto a una lista
+
+function addContact(contact) {
+    contactList.push(contact);
+  }
+  addContact("Ashanty Zakur");
+  
+  console.log(contactList);
+  
+
