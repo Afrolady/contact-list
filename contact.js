@@ -20,10 +20,41 @@ console.log(contactList);
 // Crea una función para añadir un nuevo contacto a una lista
 
 function addContact(contact) {
-    contactList.push(contact);
+  contactList.push(contact);
+}
+addContact("Ashanty Zakur");
+
+console.log(contactList);
+
+
+// Crea una función para borrar un contacto existente de la lista
+
+function deleteContact(contact) {
+    let cont1 = contactList.indexOf(contact);
+    if (cont1 !== -1) {
+      contactList.splice(cont1, 1);
+      console.log(`The contact ${contact} has been eliminated`);
+    } else {
+      console.log(`The contact ${contact} does not exist`);
+    }
   }
-  addContact("Ashanty Zakur");
+  deleteContact("Caleb Carter");
   
   console.log(contactList);
   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
