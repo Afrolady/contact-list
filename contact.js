@@ -42,6 +42,17 @@ function deleteContact(contact) {
   
   console.log(contactList);
   
+  // Crea una función para imprimir en consola los contactos presentes en la lista
+
+function printContacts() {
+    console.log("The contacts that this list contains are:");
+    contactList.forEach(function (contact, index) {
+      console.log(index + 1 + ". " + contact);
+    });
+  }
+  
+  printContacts();
+  
   
 
 
