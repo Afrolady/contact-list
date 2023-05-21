@@ -38,6 +38,15 @@ addContact(1, "Sabari", "Zary", 6028768935, [
 addContact(2, "Yaili", "Tibey", 4568763467, [
   { ciudad: "Nigeria", direccion: "carrera 23 # 16-08" },
 ]);
+addContact(3, "Aaron", "Angelo", 4568763400, [
+  { ciudad: "Bogota", direccion: "carrera 40 # 45-09" },
+]);
+addContact(4, "Asaad", "Brandon", 4568763417, [
+  { ciudad: "Ibague", direccion: "carrera 20 # 17-02" },
+]);
+addContact(5, "Cameron", "Angeles", 4567490476, [
+  { ciudad: "Palmira", direccion: "carrera 18 # 73-68" },
+]);
 console.log(contactList);
 
 // Crea una función para borrar un contacto existente de la lista
