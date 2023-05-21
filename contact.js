@@ -95,5 +95,5 @@ contactUpdate(1, {
   firstName: "Sabari",
   lastname: "Zaraty",
   phone: 6028768900,
-  location: [{ ciudad: "Oshun", direccion: "calle 5 # 45-23" }],
+  location: [{ ciudad: "Oshun", direccion: "calle 87 # 45-23" }],
 });
