@@ -69,3 +69,7 @@ function printContacts() {
 }
 
 printContacts();
+
+function contactUpdate(contact) {}
+
+p;
