@@ -32,22 +32,30 @@ function addContact(id, firstName, lastname, phone, location) {
 
   contactList.push(newContact);
 }
-addContact(1, "Sabari", "Zary", 6028768935, "Cali");
-
+addContact(1, "Sabari", "Zary", 6028768935, [
+  { ciudad: "Cali", direccion: "calle 5 # 45-23" },
+]);
+addContact(2, "Yaili", "Tibey", 4568763467, [
+  { ciudad: "Nigeria", direccion: "carrera 23 # 16-08" },
+]);
 console.log(contactList);
 
 // Crea una función para borrar un contacto existente de la lista
+// Ajusta la funcion eliminar un contacto para que puedan almacenar la siguiente información como objetos:
+// id, nombres, apellidos, teléfono, ubicaciones, ciudad, dirección
 
-function deleteContact(contact) {
-  let cont1 = contactList.indexOf(contact);
-  if (cont1 !== -1) {
-    contactList.splice(cont1, 1);
-    console.log(`The contact ${contact} has been eliminated`);
+function deleteContact(id) {
+  let index = contactList.findIndex((contact) => contact.id === id);
+  if (index !== -1) {
+    contactList.splice(index, 2);
+    console.log(
+      `The contact identified with the ID:  ${id} has been eliminated`
+    );
   } else {
-    console.log(`The contact ${contact} does not exist`);
+    console.log(`The contact identified with the ID ${id} does not exist`);
   }
 }
-deleteContact("Caleb Carter");
+deleteContact(2);
 
 console.log(contactList);
 
