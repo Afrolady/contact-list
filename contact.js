@@ -70,6 +70,21 @@ function printContacts() {
 
 printContacts();
 
-function contactUpdate(contact) {}
+function contactUpdate(id, newContact) {
+  let index = contactList.findIndex((contact) => contact.id === id);
+  if (index !== -1) {
+    contactList[index] = { ...contactList[index], ...newContact };
+    console.log(
+      `The contact identified with the ID:  ${id} was updated successfully`
+    );
+  } else {
+    console.log(`The contact identified with the ID: ${id} was not found`);
+  }
+}
 
-p;
+contactUpdate(1, {
+  firstName: "Sabari",
+  lastname: "Zaraty",
+  phone: 6028768900,
+  location: [{ ciudad: "Oshun", direccion: "calle 5 # 45-23" }],
+});
